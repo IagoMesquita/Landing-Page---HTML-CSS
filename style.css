@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +20,10 @@ body {
   justify-content: space-around;
   padding: 18px;
   background-color: rgb(74, 74, 77);
-  border: red solid;
+  position: sticky;
+  top: 0;
+  border-bottom: 1.5px solid rgb(248, 243, 243);
+  margin-bottom: 20px;
 }
 
 .navegacao {
@@ -27,5 +32,58 @@ body {
 }
 
 .navegacao-item {
+  font-family: 'Open Sans', sans-serif;
   color: aliceblue;
 }
+
+.navegacao-item:hover {
+  text-decoration: underline  5px;
+}
+
+.conteudo-principal {
+  display: flex;
+  /* flex-direction: row; */
+  align-items: center;
+  justify-content: space-around;
+  
+}
+
+.container-conteudo-texto {
+ display: flex;
+ flex-direction: column;
+ gap: 32px;
+}
+
+.conteudo-principal-nome {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  color: aliceblue;
+}
+
+.conteudo-principal-intro {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: aliceblue;
+}
+
+.conteudo-principal-botao {
+  width: 180px;
+  height: 60px;
+  border-radius: 15px;
+  border: none;
+  background-color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  color: rgb(66, 64, 64);
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.678);
+}
+.conteudo-principal-botao:hover {
+  background-color: rgb(78, 74, 74);
+  color: blanchedalmond;
+} 
+
+.conteudo-principal-img {
+  border-radius: 250px 30px 30px 100px;
+} 
