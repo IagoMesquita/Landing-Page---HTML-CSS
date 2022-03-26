@@ -37,6 +37,7 @@ body {
 }
 
 .navegacao-item:hover {
+  cursor: pointer;
   text-decoration: underline  5px;
 }
 
@@ -46,6 +47,7 @@ body {
   /* flex-direction: row; */
   align-items: center;
   justify-content: space-around;
+  height: 50vh;
 }
 
 .container-conteudo-texto {
@@ -84,6 +86,7 @@ body {
 .conteudo-principal-botao:hover {
   background-color: rgb(78, 74, 74);
   color: blanchedalmond;
+  cursor: pointer;
 } 
 
 .conteudo-principal-img {
@@ -98,6 +101,7 @@ body {
   gap: 22px;
   margin-top: 40px;
   margin-bottom: 100px;
+  height: 50vh;
 }
 
 .conteudo-secundario-titulo {
@@ -134,16 +138,14 @@ p {
   display: flex;
   align-items: center;
   gap: 8px;
+  width: 50px;
 }
-
-@media screen and (max-width: 770px) {
-  .conteudo-principal-img {
-    width: 80px;
-    border-radius: 50px;
-    position: absolute;
-    top:220px;
-    right: 100px;
-  } 
+.icone-github {
+  width: 50px 
+}
+.icone-linkedin {
+  width: 45px;
+  height: 45px;
 }
 
 @media screen and (max-width: 700px) {
@@ -157,3 +159,25 @@ p {
     margin-left: 50px;
   }
 }
+
+
+/* @media screen and (max-width: 425px) {
+  .rodape {
+      
+  }
+
+  .icones-rodape {
+    display: flex;
+
+  }
+
+  .icone-github {
+    width: 40px; 
+    margin-top: 10px;
+  }
+  .icone-linkedin {
+    width: 35px;
+    height: 35px;
+  }
+
+} */
