@@ -125,10 +125,35 @@ p {
   border-top: solid 2px rgb(74, 74, 77);;
   background-color: rgb(103, 143, 175);
   height: 90px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .icones-rodape {
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+@media screen and (max-width: 770px) {
+  .conteudo-principal-img {
+    width: 80px;
+    border-radius: 50px;
+    position: absolute;
+    top:220px;
+    right: 100px;
+  } 
+}
+
+@media screen and (max-width: 700px) {
+  .container-conteudo-texto {
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .conteudo-secundario-titulo {
+    margin-left: 50px;
+  }
 }
