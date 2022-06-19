@@ -6,13 +6,26 @@
   text-decoration: none;
 }
 
+body::-webkit-scrollbar {
+  width: 16px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #041023;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #0093E9;
+  border-radius: 20px;
+  border: 3px solid #041023;
+}
+
 body {
   font-size: 62.5%;
   font-family: "Montserrat", sans-serif;
   background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
   repete: no-repete;
   overflow-x: hidden;
-  border: 1px solid red;
 }
 
 .cabecalho {
@@ -30,20 +43,21 @@ body {
 }
 .cabecalho-navegacao {
   display: flex;
-  gap: 32px;
+  column-gap: 100px;
 }
 .cabecalho-navegacao-item {
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: aliceblue;
 }
 .cabecalho-navegacao-item:hover {
   cursor: pointer;
-  text-decoration: underline 5px;
+  color: #0093E9;
+  text-decoration: underline 5px #0093E9;
+  transition: 0.5s;
 }
 
 main {
-  border: solid 1.5px black;
   width: 80vw;
   margin: 0 auto;
   margin-top: 150px;
@@ -60,7 +74,7 @@ main {
   align-items: center;
   justify-content: space-between;
   height: 50vh;
-  border: solid 1px red;
+  padding: 0 150px;
 }
 .conteudo-principal div {
   display: flex;
@@ -105,32 +119,33 @@ main {
   margin-top: 40px;
   margin-bottom: 100px;
   height: 50vh;
-  border: solid 1px red;
 }
 .conteudo-secundario-titulo {
   border-top: 0.3px solid white;
   padding-top: 40px;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   color: aliceblue;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
 }
 .conteudo-secundario p {
   color: aliceblue;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 2rem;
 }
 
 .projetos {
+  border-top: 0.3px solid white;
   width: 100%;
-  border: solid 1px red;
+  padding-top: 120px;
+  margin-bottom: 200px;
 }
 .projetos-titulo {
   text-align: center;
   color: aliceblue;
   font-weight: 700;
   font-size: 1.8rem;
-  padding-bottom: 20px;
+  padding-bottom: 100px;
 }
 .projetos-carrossel {
   border: solid 1px white;
