@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  repete: no-repete;
+  overflow-x: hidden;
+  border: 1px solid red;
+}
+
+.cabecalho {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 18px;
+  background-color: #041023;
+  position: fixed;
+  top: 0;
+  border-bottom: 1.5px solid rgb(248, 243, 243);
+  margin-bottom: 20px;
+  width: 100%;
+}
+.cabecalho-navegacao {
+  display: flex;
+  gap: 32px;
+}
+.cabecalho-navegacao-item {
+  font-weight: 600;
+  font-size: 1rem;
+  color: aliceblue;
+}
+.cabecalho-navegacao-item:hover {
+  cursor: pointer;
+  text-decoration: underline 5px;
+}
+
+main {
+  border: solid 1.5px black;
+  width: 80vw;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+@media (min-width: 320px) and (max-width: 425px) {
+  main {
+    width: 95vw;
+    margin: 20px auto;
+  }
+}
+
+.conteudo-principal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50vh;
+  border: solid 1px red;
+}
+.conteudo-principal div {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.conteudo-principal-nome {
+  font-weight: 700;
+  font-size: 42px;
+  color: aliceblue;
+}
+.conteudo-principal-intro {
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: aliceblue;
+}
+.conteudo-principal-botao {
+  width: 180px;
+  height: 60px;
+  border-radius: 10px;
+  border: none;
+  background-color: white;
+  font-weight: 700;
+  color: rgb(66, 64, 64);
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.678);
+  transition: 0.4s;
+}
+.conteudo-principal-botao:hover {
+  background-color: #041023;
+  color: aliceblue;
+  cursor: pointer;
+}
+.conteudo-principal-img {
+  border-radius: 250px 30px 30px 100px;
+}
+
+.conteudo-secundario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+  margin-top: 40px;
+  margin-bottom: 100px;
+  height: 50vh;
+  border: solid 1px red;
+}
+.conteudo-secundario-titulo {
+  border-top: 0.3px solid white;
+  padding-top: 40px;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: aliceblue;
+  margin-bottom: 10px;
+}
+.conteudo-secundario p {
+  color: aliceblue;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.projetos {
+  width: 100%;
+  border: solid 1px red;
+}
+.projetos-titulo {
+  text-align: center;
+  color: aliceblue;
+  font-weight: 700;
+  font-size: 1.8rem;
+  padding-bottom: 20px;
+}
+.projetos-carrossel {
+  border: solid 1px white;
+  width: 400px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.rodape {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: solid 1px white;
+  background-color: transparentize;
+  position: relative;
+  bottom: 0;
+  width: 90vw;
+  margin: 0 auto;
+  padding: 25px 0;
+}
+.rodape-contato {
+  color: aliceblue;
+  font-size: 1rem;
+}
+.rodape-icones {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 50px;
+}
+.rodape-icones .icone-github {
+  width: 50px;
+}
+.rodape-icones .icone-linkedin {
+  width: 45px;
+  height: 45px;
+}
+
+/*# sourceMappingURL=style.css.map */
