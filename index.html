@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Uma LandingPage para mostrar um pouco de mim como pessoa desenvolvedora"> 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Minha Landing Page</title>
 </head>
 
@@ -14,14 +14,14 @@
       <img src="./imagens/react.png"  width="50px" alt="icone do react">
       <img src="./imagens/nodejs.png"  width="50px" alt="icone do node">
     </div>  
-    <nav class="navegacao">
-      <a href="" class="navegacao-item">
+    <nav class="cabecalho-navegacao">
+      <a href="" class="cabecalho-navegacao-item">
         Sobre mim
       </a>
-      <a href="" class="navegacao-item">
+      <a href="" class="cabecalho-navegacao-item">
         Projetos
       </a>
-      <a href="#rodape" class="navegacao-item">
+      <a href="#rodape" class="cabecalho-navegacao-item">
         Contato
       </a>
     </nav>
@@ -29,14 +29,14 @@
 
   <main>
     <section class="conteudo-principal">
+      <img class="conteudo-principal-img" src="./imagens/minha_foto.jpeg" width="200px" alt="foto pessoal">
       <div class="container-conteudo-texto">
         <h1 class="conteudo-principal-nome">Iago Mesquita Alves</h1>
         <h4 class="conteudo-principal-intro">
-          Pessoa desenvolvedora FullStack JavaScript/Node.js
+          Pessoa desenvolvedora FullStack <br> React.js/Node.js
         </h4>
         <button class="conteudo-principal-botao">Sobre mim!</button>
       </div>
-        <img class="conteudo-principal-img" src="./imagens/minha_foto.jpeg" width="200px" alt="foto pessoal">
     </section>
 
     <section class="conteudo-secundario">
@@ -45,14 +45,20 @@
       <p>2.<strong>React.js</strong>, Hooks, Redux, Jest, RTL </p>
       <p>3.<strong>Node.Js</strong>, Express, MySQL, Sequelize, Heroku, Docker</p>
     </section>
+    <section class="projetos">
+      <h2 class="projetos-titulo">Projetos</h2>
+      <div class="projetos-carrossel">
+        PROJETO 1
+      </div>
+    </section>
   </main>
 
   <footer id="rodape" class="rodape">
     <div>
-      <p> <strong>Email: iago.m.alves@hotmail.com</strong> </p>
-      <p><strong>Telefone: (xx)xxxx-xxxx</strong> </p>
+      <p class="rodape-contato"><strong>Email: iago.m.alves@hotmail.com</strong> </p>
+      <p class="rodape-contato"><strong>Telefone: (xx)xxxx-xxxx</strong> </p>
     </div>
-   <dicd v class="icones-rodape">
+   <div class="rodape-icones">
      <a href="https://github.com/IagoMesquita" target="_blank" rel="noopener noreferrer">
        <img class="icone-github" src="./imagens/github.png"  alt="icone-github">
      </a>
