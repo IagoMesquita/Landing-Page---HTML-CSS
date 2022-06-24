@@ -4,60 +4,97 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Uma LandingPage para mostrar um pouco de mim como pessoa desenvolvedora"> 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Minha Landing Page</title>
 </head>
 
 <body>
   <header class="cabecalho">
-    <div>
-      <img src="./imagens/react.png"  width="50px" alt="icone do react">
-      <img src="./imagens/nodejs.png"  width="50px" alt="icone do node">
+    <div class="cabecalho-container-img">
+      <img src="./image/react.png"  width="50px" alt="icone do react">
+      <img src="./image/nodejs.png"  width="50px" alt="icone do node">
     </div>  
-    <nav class="navegacao">
-      <a href="" class="navegacao-item">
+    <nav class="cabecalho-navegacao">
+      <a href="" class="cabecalho-navegacao-item">
+        Home
+      </a>
+      <a href="#sobre-mim" class="cabecalho-navegacao-item">
         Sobre mim
       </a>
-      <a href="" class="navegacao-item">
+      <a href="#projetos" class="cabecalho-navegacao-item">
         Projetos
       </a>
-      <a href="#rodape" class="navegacao-item">
+      <a href="#rodape" class="cabecalho-navegacao-item">
         Contato
       </a>
     </nav>
+    <div class="menu">
+      <span class="menu-hamburguer"></span>
+    </div>
   </header>
 
   <main>
     <section class="conteudo-principal">
+      <!-- <img class="conteudo-principal-img" src="./imagens/minha_foto.jpeg" width="200px" alt="foto pessoal"> -->
+      <img class="conteudo-principal-img" src="./image/AvatarMaker-background.svg" width="300px" alt="foto pessoal">
       <div class="container-conteudo-texto">
         <h1 class="conteudo-principal-nome">Iago Mesquita Alves</h1>
         <h4 class="conteudo-principal-intro">
-          Pessoa desenvolvedora FullStack JavaScript/Node.js
+          Pessoa desenvolvedora FullStack <br> React.js/Node.js
         </h4>
         <button class="conteudo-principal-botao">Sobre mim!</button>
       </div>
-        <img class="conteudo-principal-img" src="./imagens/minha_foto.jpeg" width="200px" alt="foto pessoal">
     </section>
-
+    <!-- <section id="sobre-mim" class="sobre-mim">
+      <h2>Sobre mim</h2>
+      <p>
+        Em linguística, a noção de texto é ampla e ainda aberta a uma definição mais precisa. Grosso modo, pode ser entendido como manifestação linguística das ideias de um autor, que serão interpretadas pelo leitor de acordo com seus conhecimentos linguísticos e culturais. Seu tamanho é variável.
+        “Conjunto de palavras e frases articuladas, escritas sobre qualquer suporte”.[1]
+        “Obra escrita considerada na sua redação original e autêntica (por oposição a sumário, tradução, notas, comentários, etc.)”.[2]
+        "Um texto é uma ocorrência linguística, escrita ou falada de qualquer extensão, dotada de unidade sociocomunicativa, semântica e formal. É uma unidade de linguagem em uso."[3]
+      </p>
+    </section> -->
     <section class="conteudo-secundario">
       <h3 class="conteudo-secundario-titulo">Esses são alguns dos meus conhecimentos:</h3>
-      <p>1.HTML, CSS, <strong>JavaScript</strong>, Git, GitHub</p>
+      <div class="conteudo-secundario-imgs">
+        <img src="/assets/react.png" alt="icone-react" width="110px">
+        <img src="/assets//javascript.png" alt="icone-react" width="110px">
+        <img src="/assets/html-5.png" alt="icone-react" width="110px">
+        <img src="/assets/css.png" alt="icone-react" width="110px">
+        <img src="/assets/typescript.png" alt="icone-react" width="110px">
+        <img src="/assets/nodejs .png" alt="icone-react" width="110px">
+        <img src="/assets/github.png" alt="icone-react" width="110px">
+        <img src="/assets/mysql.png" alt="icone-react" width="110px">
+        <img src="/assets/docker.png" alt="icone-react" width="110px">
+        <img src="/assets/sass.png" alt="icone-react" width="110px">
+        <img src="/assets/git.png" alt="icone-react" width="110px">
+        <img src="/assets/api.png" alt="icone-react" width="110px">
+
+      </div>
+      
+      <!-- <p>1.HTML, CSS, <strong>JavaScript</strong>, Git, GitHub</p>
       <p>2.<strong>React.js</strong>, Hooks, Redux, Jest, RTL </p>
-      <p>3.<strong>Node.Js</strong>, Express, MySQL, Sequelize, Heroku, Docker</p>
+      <p>3.<strong>Node.Js</strong>, Express, MySQL, Sequelize, Heroku, Docker</p>-->
+    </section>
+    <section id="projetos" class="projetos">
+      <h2 class="projetos-titulo">Projetos</h2>
+      <div class="projetos-carrossel">
+        PROJETO 1
+      </div>
     </section>
   </main>
 
   <footer id="rodape" class="rodape">
     <div>
-      <p> <strong>Email: iago.m.alves@hotmail.com</strong> </p>
-      <p><strong>Telefone: (xx)xxxx-xxxx</strong> </p>
+      <p class="rodape-contato"><strong>Email: iago.m.alves@hotmail.com</strong> </p>
+      <p class="rodape-contato"><strong>Telefone: (86) 98867-9119</strong> </p>
     </div>
-   <dicd v class="icones-rodape">
+   <div class="rodape-icones">
      <a href="https://github.com/IagoMesquita" target="_blank" rel="noopener noreferrer">
-       <img class="icone-github" src="./imagens/github.png"  alt="icone-github">
+       <img class="icone-github" src="./image/github.png"  alt="icone-github">
      </a>
      <a href="https://www.linkedin.com/in/iago-mesquita-alves/" target="_blank" rel="noopener noreferrer">
-       <img class="icone-linkedin" src="./imagens/linkedin.png" alt="icone-linkedin"> 
+       <img class="icone-linkedin" src="./image/linkedin.png" alt="icone-linkedin"> 
      </a>
    </div>
   </footer>

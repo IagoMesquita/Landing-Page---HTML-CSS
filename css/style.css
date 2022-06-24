@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap");
+.conteudo-principal-nome {
+  background-image: linear-gradient(-45deg, rgb(9, 112, 180) 20%, rgb(1, 107, 177) 44%, rgb(4, 16, 35) 100%);
+  ackground-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  color: black;
+}
+
+.rodape-icones .icone-linkedin:hover, .rodape-icones .icone-github:hover, .conteudo-secundario-imgs img:hover {
+  -moz-transform: translate(0px, -10px);
+  -webkit-transform: translate(0px, -10px);
+  -o-transform: translate(0px, -10px);
+  -ms-transform: translate(0px, -10px);
+  transform: translate(0px, -10px);
+}
+
+.conteudo-secundario-titulo:hover {
+  color: #0776b7;
+}
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  repete: no-repete;
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  width: 16px;
+}
+body::-webkit-scrollbar-track {
+  background: #041023;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #0093E9;
+  border-radius: 20px;
+  border: 3px solid #041023;
+}
+
+.cabecalho {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 18px;
+  background-color: #041023;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1.5px solid rgb(248, 243, 243);
+  margin-bottom: 20px;
+  width: 100%;
+}
+@media (min-width: 320px) and (max-width: 425px) {
+  .cabecalho {
+    width: 100%;
+    height: 80px;
+  }
+  .cabecalho-container-img {
+    display: none;
+  }
+}
+.cabecalho-navegacao {
+  display: flex;
+  column-gap: 100px;
+}
+@media (min-width: 320px) and (max-width: 425px) {
+  .cabecalho-navegacao-item {
+    display: none;
+  }
+}
+.cabecalho-navegacao-item {
+  font-weight: 600;
+  font-size: 1.2em;
+  color: #F0f8FF;
+}
+.cabecalho-navegacao-item:hover {
+  cursor: pointer;
+  color: #0093E9;
+  text-decoration: underline 5px #0093E9;
+  transition: 0.5s;
+}
+
+.menu {
+  display: none;
+  background: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: fixed;
+  top: 10px;
+  right: 25px;
+}
+@media (min-width: 320px) and (max-width: 425px) {
+  .menu {
+    display: block;
+  }
+}
+.menu-hamburguer {
+  background: #000;
+  display: block;
+  width: 30px;
+  height: 2px;
+  position: relative;
+  top: 30px;
+  left: 15px;
+}
+.menu-hamburguer:before, .menu-hamburguer:after {
+  background: #000;
+  display: block;
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+}
+.menu-hamburguer:before {
+  top: -10px;
+}
+.menu-hamburguer:after {
+  bottom: -10px;
+}
+
+main {
+  width: 90vw;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+@media (min-width: 320px) and (max-width: 425px) {
+  main {
+    margin: 120px auto;
+  }
+}
+
+.conteudo-principal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 5vw;
+  height: 80vh;
+}
+@media (min-width: 320px) and (max-width: 425px) {
+  .conteudo-principal {
+    flex-direction: column;
+    text-align: center;
+  }
+  .conteudo-principal-img {
+    width: 96px;
+    margin-bottom: 20px;
+  }
+  .conteudo-principal-botao {
+    display: none;
+  }
+}
+.conteudo-principal div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.conteudo-principal-nome {
+  font-weight: 700;
+  font-size: 3rem;
+}
+.conteudo-principal-intro {
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: #F0f8FF;
+}
+.conteudo-principal-botao {
+  width: 180px;
+  height: 60px;
+  border-radius: 10px;
+  border: none;
+  background-color: white;
+  font-weight: 700;
+  color: rgb(66, 64, 64);
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.678);
+  transition: 0.4s;
+}
+.conteudo-principal-botao:hover {
+  background-color: #041023;
+  color: #015c90;
+  cursor: pointer;
+}
+.conteudo-principal-img {
+  border-radius: 25%;
+  transition: 0.5s;
+  box-shadow: 6px 7px 6px 2px rgba(0, 0, 0, 0.43);
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.conteudo-principal-img:hover {
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.43);
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.conteudo-secundario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  height: 100%;
+}
+@media (min-width: 320px) and (max-width: 425px) {
+  .conteudo-secundario {
+    height: 100%;
+  }
+  .conteudo-secundario-imgs {
+    display: flex;
+    column-gap: 0;
+  }
+  .conteudo-secundario-imgs img {
+    width: 90px;
+  }
+}
+.conteudo-secundario-titulo {
+  text-align: center;
+  border-top: 0.3px solid white;
+  padding-top: 40px;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #015c90;
+  margin-bottom: 50px;
+  transition: 2s;
+}
+.conteudo-secundario-imgs {
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 50px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+.conteudo-secundario-imgs img {
+  transition: 0.6s;
+}
+.projetos {
+  border-top: 0.3px solid white;
+  width: 100%;
+  padding-top: 40px;
+  margin-bottom: 200px;
+}
+.projetos-titulo {
+  text-align: center;
+  color: #015c90;
+  font-weight: 700;
+  font-size: 1.8rem;
+  padding-bottom: 100px;
+}
+.projetos-carrossel {
+  border: solid 1px white;
+  width: 400px;
+  height: 500px;
+  margin: 0 auto;
+}
+@media (min-width: 320px) and (max-width: 425px) {
+  .projetos-carrossel {
+    width: 300px;
+    height: 400px;
+  }
+}
+
+.rodape {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: solid 1px white;
+  background-color: transparentize;
+  position: relative;
+  bottom: 0;
+  width: 90vw;
+  margin: 0 auto;
+  padding: 25px 0;
+}
+@media (min-width: 320px) and (max-width: 425px) {
+  .rodape-icones {
+    display: flex;
+    flex-direction: column;
+  }
+  .rodape-contato {
+    padding-right: 10px;
+  }
+}
+.rodape-contato {
+  color: #015c90;
+  font-size: 1rem;
+}
+.rodape-icones {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 50px;
+}
+.rodape-icones .icone-github {
+  width: 50px;
+  padding: 0;
+  transition: 0.6s;
+}
+.rodape-icones .icone-linkedin {
+  width: 45px;
+  height: 45px;
+  transition: 0.6s;
+}
+
+/*# sourceMappingURL=style.css.map */
