@@ -8,6 +8,18 @@
   color: black;
 }
 
+.rodape-icones .icone-linkedin:hover, .rodape-icones .icone-github:hover, .conteudo-secundario-imgs img:hover {
+  -moz-transform: translate(0px, -10px);
+  -webkit-transform: translate(0px, -10px);
+  -o-transform: translate(0px, -10px);
+  -ms-transform: translate(0px, -10px);
+  transform: translate(0px, -10px);
+}
+
+.conteudo-secundario-titulo:hover {
+  color: #0776b7;
+}
+
 *, *:before, *:after {
   margin: 0;
   padding: 0;
@@ -50,7 +62,7 @@ body::-webkit-scrollbar-thumb {
 @media (min-width: 320px) and (max-width: 425px) {
   .cabecalho {
     width: 100%;
-    height: 60px;
+    height: 80px;
   }
   .cabecalho-container-img {
     display: none;
@@ -68,7 +80,7 @@ body::-webkit-scrollbar-thumb {
 .cabecalho-navegacao-item {
   font-weight: 600;
   font-size: 1.2em;
-  color: aliceblue;
+  color: #F0f8FF;
 }
 .cabecalho-navegacao-item:hover {
   cursor: pointer;
@@ -78,10 +90,19 @@ body::-webkit-scrollbar-thumb {
 }
 
 .menu {
+  display: none;
   background: #fff;
   width: 60px;
   height: 60px;
   border-radius: 50%;
+  position: fixed;
+  top: 10px;
+  right: 25px;
+}
+@media (min-width: 320px) and (max-width: 425px) {
+  .menu {
+    display: block;
+  }
 }
 .menu-hamburguer {
   background: #000;
@@ -108,13 +129,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 main {
-  width: 85vw;
+  width: 90vw;
   margin: 0 auto;
   margin-top: 150px;
 }
 @media (min-width: 320px) and (max-width: 425px) {
   main {
-    width: 100vw;
     margin: 120px auto;
   }
 }
@@ -128,10 +148,12 @@ main {
 }
 @media (min-width: 320px) and (max-width: 425px) {
   .conteudo-principal {
+    flex-direction: column;
     text-align: center;
   }
   .conteudo-principal-img {
-    display: none;
+    width: 96px;
+    margin-bottom: 20px;
   }
   .conteudo-principal-botao {
     display: none;
@@ -140,7 +162,7 @@ main {
 .conteudo-principal div {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 20px;
 }
 .conteudo-principal-nome {
   font-weight: 700;
@@ -149,7 +171,7 @@ main {
 .conteudo-principal-intro {
   font-weight: 400;
   font-size: 1.3rem;
-  color: aliceblue;
+  color: #F0f8FF;
 }
 .conteudo-principal-botao {
   width: 180px;
@@ -164,7 +186,7 @@ main {
 }
 .conteudo-principal-botao:hover {
   background-color: #041023;
-  color: aliceblue;
+  color: #015c90;
   cursor: pointer;
 }
 .conteudo-principal-img {
@@ -199,9 +221,12 @@ main {
   .conteudo-secundario {
     height: 100%;
   }
-  .conteudo-secundario-img {
+  .conteudo-secundario-imgs {
     display: flex;
     column-gap: 0;
+  }
+  .conteudo-secundario-imgs img {
+    width: 90px;
   }
 }
 .conteudo-secundario-titulo {
@@ -210,10 +235,11 @@ main {
   padding-top: 40px;
   font-weight: 700;
   font-size: 2rem;
-  color: aliceblue;
+  color: #015c90;
   margin-bottom: 50px;
+  transition: 2s;
 }
-.conteudo-secundario-img {
+.conteudo-secundario-imgs {
   width: 70%;
   display: flex;
   justify-content: space-evenly;
@@ -221,7 +247,9 @@ main {
   margin-bottom: 10px;
   flex-wrap: wrap;
 }
-
+.conteudo-secundario-imgs img {
+  transition: 0.6s;
+}
 .projetos {
   border-top: 0.3px solid white;
   width: 100%;
@@ -230,7 +258,7 @@ main {
 }
 .projetos-titulo {
   text-align: center;
-  color: aliceblue;
+  color: #015c90;
   font-weight: 700;
   font-size: 1.8rem;
   padding-bottom: 100px;
@@ -240,6 +268,12 @@ main {
   width: 400px;
   height: 500px;
   margin: 0 auto;
+}
+@media (min-width: 320px) and (max-width: 425px) {
+  .projetos-carrossel {
+    width: 300px;
+    height: 400px;
+  }
 }
 
 .rodape {
@@ -259,9 +293,12 @@ main {
     display: flex;
     flex-direction: column;
   }
+  .rodape-contato {
+    padding-right: 10px;
+  }
 }
 .rodape-contato {
-  color: aliceblue;
+  color: #015c90;
   font-size: 1rem;
 }
 .rodape-icones {
@@ -272,10 +309,13 @@ main {
 }
 .rodape-icones .icone-github {
   width: 50px;
+  padding: 0;
+  transition: 0.6s;
 }
 .rodape-icones .icone-linkedin {
   width: 45px;
   height: 45px;
+  transition: 0.6s;
 }
 
 /*# sourceMappingURL=style.css.map */

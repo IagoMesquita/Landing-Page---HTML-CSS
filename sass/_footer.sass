@@ -14,9 +14,11 @@
     &-icones
       display: flex
       flex-direction: column
+    &-contato
+      padding-right: 10px
 
   &-contato
-    color: $text-color
+    color: $text-color-b
     font-size: 1rem
 
   &-icones
@@ -24,9 +26,18 @@
     align-items: center
     gap: 8px
     width: 50px
-
+    
     .icone-github
       width: 50px 
+      padding: 0
+      transition: .6s
+      &:hover
+        @extend %transform-hover
+
+
     .icone-linkedin
       width: 45px 
       height: 45px 
+      transition: .6s
+      &:hover
+        @extend %transform-hover
