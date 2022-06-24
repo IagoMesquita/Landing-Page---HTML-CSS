@@ -150,6 +150,7 @@ main {
   .conteudo-principal {
     flex-direction: column;
     text-align: center;
+    justify-content: space-around;
   }
   .conteudo-principal-img {
     width: 96px;
