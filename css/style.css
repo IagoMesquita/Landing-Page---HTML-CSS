@@ -156,6 +156,9 @@ main {
     width: 96px;
     margin-top: 25px;
   }
+  .conteudo-principal-nome {
+    margin-bottom: 20px;
+  }
   .conteudo-principal-botao {
     display: none;
   }
