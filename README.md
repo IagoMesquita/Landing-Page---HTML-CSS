@@ -15,9 +15,17 @@ Sendo assim, esse é meu primeiro portifólio oficial.
 **Front-end:** HTML5, SASS, CSS
 
 
+## Web Site
+
+URL para o site
+
+```bash
+https://landing-page-html-css.vercel.app/
+```
+    
 
 
 ## Screenshots
 
-![App Screenshot]('')
+![captura-portfolio](https://user-images.githubusercontent.com/84816200/175838513-bdba957a-121c-4d6a-9225-403ad3133156.png)
 
