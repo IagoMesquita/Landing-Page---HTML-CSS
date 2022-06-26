@@ -8,11 +8,9 @@
   position: fixed
   top: 0
   z-index: 20
-  border-bottom: 1.5px solid rgb(248, 243, 243)
-  // margin-bottom: 20px
+  border-bottom: 1px solid rgba(248, 243, 243, 0.474)
   width: 100%
-  @include full-screen
-  background-color: #ffffff48
+  background-color:$bg-blue-dark
 
   @include mobile
     width: 100%
@@ -32,10 +30,10 @@
       font-weight: 600
       font-size: 1.2em
       color: $text-color-w
+      transition: .8s
       
 
       &:hover
         cursor: pointer
         color: $bg-blue
         text-decoration: underline  5px $bg-blue
-        transition: .5s

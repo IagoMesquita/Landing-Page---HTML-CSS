@@ -42,12 +42,12 @@ body::-webkit-scrollbar {
   width: 16px;
 }
 body::-webkit-scrollbar-track {
-  background: #041023;
+  background: rgba(4, 16, 35, 0.7176470588);
 }
 body::-webkit-scrollbar-thumb {
   background-color: #0093E9;
   border-radius: 20px;
-  border: 3px solid #041023;
+  border: 3px solid rgba(4, 16, 35, 0.7176470588);
 }
 
 .cabecalho {
@@ -56,13 +56,13 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   justify-content: space-around;
   padding: 18px;
-  background-color: #041023;
+  background-color: rgba(4, 16, 35, 0.7176470588);
   position: fixed;
   top: 0;
   z-index: 20;
-  border-bottom: 1.5px solid rgb(248, 243, 243);
+  border-bottom: 1px solid rgba(248, 243, 243, 0.474);
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.2823529412);
+  background-color: rgba(4, 16, 35, 0.7176470588);
 }
 @media (min-width: 320px) and (max-width: 425px) {
   .cabecalho {
@@ -80,12 +80,12 @@ body::-webkit-scrollbar-thumb {
   font-weight: 600;
   font-size: 1.2em;
   color: #F0f8FF;
+  transition: 0.8s;
 }
 .cabecalho-navegacao-item:hover {
   cursor: pointer;
   color: #0093E9;
   text-decoration: underline 5px #0093E9;
-  transition: 0.5s;
 }
 
 .menu {
@@ -188,9 +188,13 @@ input:checked ~ label .menu {
   }
 }
 
+main {
+  margin-top: 100px;
+}
 @media (min-width: 320px) and (max-width: 425px) {
   main {
-    margin: 40px auto;
+    padding-top: 10px;
+    margin: 70px auto;
   }
 }
 
@@ -205,12 +209,24 @@ input:checked ~ label .menu {
   margin-bottom: 50px;
   border-top: 0.3px solid white;
 }
+@media (min-width: 320px) and (max-width: 425px) {
+  .sobre-mim h2 {
+    text-align: start;
+    margin-left: 10px;
+  }
+}
 .sobre-mim p {
-  text-align: start;
+  text-align: justify;
   font-weight: 500;
   font-size: 1.3rem;
   margin-bottom: 25px;
   color: #F0f8FF;
+}
+@media (min-width: 320px) and (max-width: 425px) {
+  .sobre-mim p {
+    text-align: start;
+    margin-left: 10px;
+  }
 }
 
 .conteudo-principal {
@@ -218,6 +234,7 @@ input:checked ~ label .menu {
   align-items: center;
   justify-content: space-around;
   height: 80vh;
+  margin-bottom: 140px;
 }
 @media (min-width: 320px) and (max-width: 425px) {
   .conteudo-principal {
@@ -265,7 +282,7 @@ input:checked ~ label .menu {
   transition: 0.4s;
 }
 .conteudo-principal-botao:hover {
-  background-color: #041023;
+  background-color: rgba(4, 16, 35, 0.7176470588);
   color: #015c90;
   cursor: pointer;
 }
@@ -338,17 +355,22 @@ input:checked ~ label .menu {
   font-size: 1.8rem;
   padding-bottom: 100px;
 }
-.projetos-carrossel {
-  border: solid 1px white;
-  width: 400px;
+.projetos-card {
+  border-radius: 5px;
+  width: 300px;
   height: 500px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
-@media (min-width: 320px) and (max-width: 425px) {
-  .projetos-carrossel {
-    width: 300px;
-    height: 400px;
-  }
+.projetos-card img {
+  width: 100%;
+  height: 200px;
+}
+.projetos-card .detalhes {
+  width: 100%;
+  height: 300px;
+  background: rgba(0, 0, 0, 0.462745098);
 }
 
 .rodape {

@@ -32,6 +32,7 @@ body
 @import 'menuHamburguer'
 
 main 
+  margin-top: 100px 
   // border: solid 1.5px black
   @extend %container-main
   // width: 90vw
@@ -39,7 +40,8 @@ main
   // margin-top: 50px
   
   @include mobile
-    margin: 40px auto 
+    padding-top: 10px 
+    margin: 70px auto 
 
 @import 'apresentacao'
 
@@ -47,9 +49,8 @@ main
   display: flex
   align-items: center
   justify-content: space-around
-  // column-gap: 5vw
   height: 80vh
-  // margin: 0 auto
+  margin-bottom: 140px
   // border: solid 1px purple
   @include mobile
     flex-direction: column
