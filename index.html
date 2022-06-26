@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Minha Landing Page</title>
 </head>
-
 <body>
   <header class="cabecalho">
     <div class="cabecalho-container-img">
@@ -16,10 +15,10 @@
     </div>  
     <!-- <input type="checkbox" id="menu"> -->
     <nav class="cabecalho-navegacao">
-      <a href="" class="cabecalho-navegacao-item">
+      <a href="#home" class="cabecalho-navegacao-item">
         Home
       </a>
-      <a href="#sobre-mim" class="cabecalho-navegacao-item">
+      <a href="#sobre" class="cabecalho-navegacao-item">
         Sobre mim
       </a>
       <a href="#projetos" class="cabecalho-navegacao-item">
@@ -39,7 +38,7 @@
 
   <input type="checkbox" id="menu">
   <nav>
-    <a href="">
+    <a href="#home">
       Home
     </a>
     <a href="#sobre-mim">
@@ -52,7 +51,6 @@
        Contato
     </a>
   </nav>
-
   <label for="menu">
     <div class="menu">
       <span class="menu-hamburguer"></span>
@@ -60,7 +58,7 @@
   </label>
 
   <main>
-    <section class="conteudo-principal">
+    <section id="home" class="conteudo-principal">
       <!-- <img class="conteudo-principal-img" src="./imagens/minha_foto.jpeg" width="200px" alt="foto pessoal"> -->
       <img class="conteudo-principal-img" src="./image/AvatarMaker-background.svg" width="300px" alt="foto pessoal">
       <div class="container-conteudo-texto">
@@ -71,15 +69,26 @@
         <button class="conteudo-principal-botao">Sobre mim!</button>
       </div>
     </section>
-    <!-- <section id="sobre-mim" class="sobre-mim">
-      <h2>Sobre mim</h2>
+
+    <section id="sobre" class="sobre-mim">
+      <h2>Quem sou eu?</h2>
       <p>
-        Em linguística, a noção de texto é ampla e ainda aberta a uma definição mais precisa. Grosso modo, pode ser entendido como manifestação linguística das ideias de um autor, que serão interpretadas pelo leitor de acordo com seus conhecimentos linguísticos e culturais. Seu tamanho é variável.
-        “Conjunto de palavras e frases articuladas, escritas sobre qualquer suporte”.[1]
-        “Obra escrita considerada na sua redação original e autêntica (por oposição a sumário, tradução, notas, comentários, etc.)”.[2]
-        "Um texto é uma ocorrência linguística, escrita ou falada de qualquer extensão, dotada de unidade sociocomunicativa, semântica e formal. É uma unidade de linguagem em uso."[3]
+        Apaixonado por tecnlogia, o que era entusiamos, virou profissão. 
+        Formado em Administração de empresas e já tendo atuado na área, 
+        resolvi migrar para a área de técnologia, mais epecificamente, <strong>Desenvolvimento web</strong>. 
       </p>
-    </section> -->
+
+        <p>Para 'entrar nesse universo' escolhi a <a href="https://www.betrybe.com/formacao-desenvolvimento-web" target="_blank">Trybe</a>, uma escola de programação, 
+        focada na formação <strong>Full Stack</strong> em <strong>JavaScript</strong>. Lá aprendentos, aprendemos ferramentas de versionamento de código, que nos ajudam na organização
+        e no trabalho em equipe, Git e Github. No front-end aprendemos o trio, HTMl, CSS e JavaScript, e utilizamos o React como biblioteca, além dos testes, co Jest e RTL, enquanto no 
+        back-end, Node.js, Express, MySQL, MongoBD, Sequelize como ORM. Sem contar Ciencia da compuação que ainda estar por vir.
+        </strong>
+        onde não aprendendos somente sobe técnologia, mas sobre comunicação assertiva, trabalho em equipe,
+        liderença, entre outros habilidade sociais.</p>
+        Escolher a tecnologia para fazer parte da minha vida, já está me impactando positivamente e espero que e alguma forma,
+        eu possa, através dela, fazer o mesmo por outras pessoas.  
+      </p>
+    </section>
     <section class="conteudo-secundario">
       <h3 class="conteudo-secundario-titulo">Esses são alguns dos meus conhecimentos:</h3>
       <div class="conteudo-secundario-imgs">
