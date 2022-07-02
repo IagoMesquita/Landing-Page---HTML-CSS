@@ -80,12 +80,13 @@ body::-webkit-scrollbar-thumb {
   font-weight: 600;
   font-size: 1.2em;
   color: #F0f8FF;
-  transition: 0.8s;
+  transition: 0.4s;
+  border-bottom: 2px solid transparent;
 }
 .cabecalho-navegacao-item:hover {
   cursor: pointer;
   color: #0093E9;
-  text-decoration: underline 5px #0093E9;
+  border-color: #0093E9;
 }
 
 .menu {
@@ -185,6 +186,10 @@ input:checked ~ label .menu {
   input:checked ~ .nav-mobile .rede {
     display: flex;
     justify-content: space-evenly;
+  }
+  input:checked ~ .nav-mobile .rede a {
+    text-decoration: none;
+    border-bottom: transparent;
   }
 }
 
