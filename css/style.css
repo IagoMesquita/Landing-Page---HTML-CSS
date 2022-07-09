@@ -145,8 +145,8 @@ input:checked ~ label .menu-hamburguer::after {
   top: 0;
 }
 input:checked ~ label .menu {
-  box-shadow: 0 0 0 200vw rgba(255, 255, 255, 0.462745098), 0 0 0 200vh rgba(255, 255, 255, 0.462745098);
-  transition: 0.5s;
+  box-shadow: 0 0 0 200vw #fff, 0 0 0 200vh #fff;
+  transition: 0.8s;
 }
 
 @media (min-width: 320px) and (max-width: 425px) {
