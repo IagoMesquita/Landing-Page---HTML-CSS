@@ -25,6 +25,15 @@
   color: #0776b7;
 }
 
+.swiper-pagination {
+  margin-bottom: 525px;
+}
+.swiper-pagination span {
+  width: 15px;
+  height: 15px;
+  border: solid 1px #fff;
+}
+
 *, *:before, *:after {
   margin: 0;
   padding: 0;

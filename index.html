@@ -10,8 +10,11 @@
   <meta name="description" content="Uma LandingPage para mostrar um pouco de mim como pessoa desenvolvedora"> 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
   <link rel="stylesheet" href="css/style.css">
-  ima
-  <title>Minha Landing Page</title>
+  <!-- swiper -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
 </head>
 <body>
   <header class="cabecalho">
@@ -135,25 +138,97 @@
       <p>2.<strong>React.js</strong>, Hooks, Redux, Jest, RTL </p>
       <p>3.<strong>Node.Js</strong>, Express, MySQL, Sequelize, Heroku, Docker</p>-->
     </section>
-    <section id="projetos" class="projetos">
+    <section id="projetos" class="projetos swiper mySwiper">
       <h2 class="projetos-titulo">Projetos</h2>
-     
-      <div class="projetos-card">
-        <div class="image"></div>
-        <!-- <img src="/assets/Captura de tela de 2022-06-26 20-15-11.png" alt="foto-portfolio"> -->
-        <div class="detalhes">
-          <div class="tecnologias">
-            <p>HTML5</p>
-            <p>CSS</p>
-            <p>SASS</p>
-          </div>
-          <p class="descricao">Esse é meu primeiro portifólio, que irá conter meus demais projetos em breve. Aguardem!!</p>
-          <div class="links-projetos">
-            <a href="https://landing-page-html-css.vercel.app/" target="_blank">Website</a>
-            <a href="https://github.com/IagoMesquita/Landing-Page---HTML-CSS" target="_blank">Github</a>
+      <div class="swiper-wrapper">
+        <!-- CARD-1 -->
+        <div class="projetos-card swiper-slide">
+          <div class="image"></div>
+          <!-- <img src="/assets/Captura de tela de 2022-06-26 20-15-11.png" alt="foto-portfolio"> -->
+          <div class="detalhes">
+            <div class="tecnologias">
+              <p>HTML5</p>
+              <p>CSS</p>
+              <p>SASS</p>
+            </div>
+            <p class="descricao">Esse é meu primeiro portifólio, que irá conter meus demais projetos em breve. Aguardem!!</p>
+            <div class="links-projetos">
+              <a href="https://landing-page-html-css.vercel.app/" target="_blank">Website</a>
+              <a href="https://github.com/IagoMesquita/Landing-Page---HTML-CSS" target="_blank">Github</a>
+            </div>
           </div>
         </div>
+        <!-- CARD-2 -->
+        <div class="projetos-card swiper-slide">
+          <div class="image"></div>
+          <!-- <img src="/assets/Captura de tela de 2022-06-26 20-15-11.png" alt="foto-portfolio"> -->
+          <div class="detalhes">
+            <div class="tecnologias">
+              <p>HTML5</p>
+              <p>CSS</p>
+              <p>SASS</p>
+            </div>
+            <p class="descricao">Esse é meu primeiro portifólio, que irá conter meus demais projetos em breve. Aguardem!!</p>
+            <div class="links-projetos">
+              <a href="https://landing-page-html-css.vercel.app/" target="_blank">Website</a>
+              <a href="https://github.com/IagoMesquita/Landing-Page---HTML-CSS" target="_blank">Github</a>
+            </div>
+          </div>
+        </div>
+        <!-- CARD-3 -->
+        <div class="projetos-card swiper-slide">
+          <div class="image"></div>
+          <!-- <img src="/assets/Captura de tela de 2022-06-26 20-15-11.png" alt="foto-portfolio"> -->
+          <div class="detalhes">
+            <div class="tecnologias">
+              <p>HTML5</p>
+              <p>CSS</p>
+              <p>SASS</p>
+            </div>
+            <p class="descricao">Esse é meu primeiro portifólio, que irá conter meus demais projetos em breve. Aguardem!!</p>
+            <div class="links-projetos">
+              <a href="https://landing-page-html-css.vercel.app/" target="_blank">Website</a>
+              <a href="https://github.com/IagoMesquita/Landing-Page---HTML-CSS" target="_blank">Github</a>
+            </div>
+          </div>
+        </div>
+           <!-- CARD-4 -->
+           <div class="projetos-card swiper-slide">
+            <div class="image"></div>
+            <!-- <img src="/assets/Captura de tela de 2022-06-26 20-15-11.png" alt="foto-portfolio"> -->
+            <div class="detalhes">
+              <div class="tecnologias">
+                <p>HTML5</p>
+                <p>CSS</p>
+                <p>SASS</p>
+              </div>
+              <p class="descricao">Esse é meu primeiro portifólio, que irá conter meus demais projetos em breve. Aguardem!!</p>
+              <div class="links-projetos">
+                <a href="https://landing-page-html-css.vercel.app/" target="_blank">Website</a>
+                <a href="https://github.com/IagoMesquita/Landing-Page---HTML-CSS" target="_blank">Github</a>
+              </div>
+            </div>
+          </div>
+            <!-- CARD-5 -->
+           <div class="projetos-card swiper-slide">
+            <div class="image"></div>
+            <!-- <img src="/assets/Captura de tela de 2022-06-26 20-15-11.png" alt="foto-portfolio"> -->
+            <div class="detalhes">
+              <div class="tecnologias">
+                <p>HTML5</p>
+                <p>CSS</p>
+                <p>SASS</p>
+              </div>
+              <p class="descricao">Esse é meu primeiro portifólio, que irá conter meus demais projetos em breve. Aguardem!!</p>
+              <div class="links-projetos">
+                <a href="https://landing-page-html-css.vercel.app/" target="_blank">Website</a>
+                <a href="https://github.com/IagoMesquita/Landing-Page---HTML-CSS" target="_blank">Github</a>
+              </div>
+            </div>
+          </div>
       </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
     </section>
   </main>
 
@@ -171,11 +246,12 @@
      </a>
    </div>
   </footer>
+ <!-- Swiper JS -->
+ <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+ <!-- Initialize Swiper -->
+ <script src="./script.js">
+  
+ </script>  
 </body>
 </html>
-
-<!-- Autores dos icones
-gitHub: iconsBox
-lindekin: Md Tanvirul Haque -->
-<!-- react: Freepik -->
-<!-- node: Freepik -->
