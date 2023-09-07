@@ -253,7 +253,6 @@ main .sobre-mim p {
   justify-content: space-around;
   height: 80vh;
   margin-bottom: 140px;
-  border: solid 1px purple;
 }
 @media (min-width: 320px) and (max-width: 425px) {
   .conteudo-principal {
@@ -266,7 +265,6 @@ main .sobre-mim p {
   .conteudo-principal-img {
     width: 96px;
     margin-top: 25px;
-    border: solid 1px purple;
   }
   .conteudo-principal-nome {
     margin-bottom: 20px;
@@ -428,7 +426,7 @@ main .sobre-mim p {
   background-size: 125%;
 }
 .projetos-card .image-2 {
-  background-image: url("../assets/search-github.png");
+  background-image: url("../assets/search-github-card.png");
 }
 .projetos-card .image-2:hover {
   background-size: 125%;
