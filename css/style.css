@@ -216,11 +216,10 @@ main {
     margin: 70px auto;
   }
 }
-
-.sobre-mim {
+main .sobre-mim {
   width: 100%;
 }
-.sobre-mim h2 {
+main .sobre-mim h2 {
   text-align: center;
   color: #015c90;
   font-size: 2rem;
@@ -229,12 +228,12 @@ main {
   border-top: 0.3px solid white;
 }
 @media (min-width: 320px) and (max-width: 425px) {
-  .sobre-mim h2 {
+  main .sobre-mim h2 {
     text-align: start;
     margin-left: 10px;
   }
 }
-.sobre-mim p {
+main .sobre-mim p {
   text-align: justify;
   font-weight: 500;
   font-size: 1.3rem;
@@ -242,7 +241,7 @@ main {
   color: #F0f8FF;
 }
 @media (min-width: 320px) and (max-width: 425px) {
-  .sobre-mim p {
+  main .sobre-mim p {
     text-align: justify-self;
     padding: 0 15px;
   }
@@ -254,6 +253,7 @@ main {
   justify-content: space-around;
   height: 80vh;
   margin-bottom: 140px;
+  border: solid 1px purple;
 }
 @media (min-width: 320px) and (max-width: 425px) {
   .conteudo-principal {
@@ -261,16 +261,15 @@ main {
     text-align: center;
     justify-content: space-around;
     margin-bottom: 40px;
+    padding-top: 50px;
   }
   .conteudo-principal-img {
     width: 96px;
     margin-top: 25px;
+    border: solid 1px purple;
   }
   .conteudo-principal-nome {
     margin-bottom: 20px;
-  }
-  .conteudo-principal-botao {
-    display: none;
   }
 }
 .conteudo-principal div {
@@ -336,7 +335,7 @@ main {
     display: flex;
     column-gap: 0;
   }
-  .conteudo-secundario-imgs img {
+  .conteudo-secundario img {
     width: 90px;
   }
 }
