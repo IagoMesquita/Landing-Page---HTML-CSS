@@ -20,7 +20,7 @@ Sendo assim, esse é meu primeiro portifólio oficial.
 URL para o site
 
 ```bash
-https://landing-page-html-css.vercel.app/
+https://portfolio-iago-mesquita.vercel.app
 ```
     
 
